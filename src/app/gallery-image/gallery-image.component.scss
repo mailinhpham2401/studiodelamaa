@@ -1,0 +1,24 @@
+.gallery {
+  img {
+    width: 180px;
+    height: 180px;
+    transition: all 1s ease-in-out;
+    border-radius: 10px;
+
+    &.selected {
+      border-radius: 50%;
+    }
+  }
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  .content {
+    margin-right: 20px;
+    border: 2px solid;
+    padding: 20px;
+  }
+}
