@@ -1,0 +1,9 @@
+<div class="group">
+    <div class="content" *ngIf="currentContent.length > 0">{{currentContent}}</div>
+    <div class="gallery row">
+        <div class="kitten col" *ngFor="let kitten of gallery">
+            <img [src]="kitten.imgSrc" [alt]="kitten.content" (click)="displayContent(kitten.id, kitten.content)"
+                [class.selected]="currentId === kitten.id">
+        </div>
+    </div>
+</div>
